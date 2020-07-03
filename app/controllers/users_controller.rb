@@ -15,6 +15,11 @@ class UsersController < ApplicationController
     def edit
         @user = User.find(params[:id])
     end
+    
+    # 詳細情報表示を追加
+    def show
+        @user = User.find(params[:id])
+    end
 
     def update
         user = User.find(params[:id])
